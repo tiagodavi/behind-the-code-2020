@@ -2,8 +2,8 @@
 
 Set of challenges of IBM Behind the Code 2020
 
-70k aewsome people participated in this event.
-I completed my challenge 8 in 86 position and was able to get 5 stars on multiple others.
+70k awesome people participated in this event.
+I completed my challenge 8 in 86 and was able to get 5 stars on multiple others.
 
 You are free to use my solutions to study and improve yourself.
 
