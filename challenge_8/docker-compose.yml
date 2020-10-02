@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  challenge_8:
+    image: challenge_8
+    container_name: challenge_8
+    restart: on-failure
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/opt/app
+    working_dir: /opt/app
+    entrypoint: ["gunicorn", "app:app", "-b", "0.0.0.0:8000", "--timeout", "300"]
+    ports:
+      - "80:8000"
+    environment:
+      - FLASK_APP=app.py
+      - FLASK_ENV=production
+      - FLASK_DEBUG=0
+      - FLASK_RUN_PORT=8000
